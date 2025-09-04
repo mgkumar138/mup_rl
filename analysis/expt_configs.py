@@ -518,3 +518,80 @@ dashes_dict = {
     'NTK+1/sqrt(L)': (5,5),
     'μP': (1, 1),
 }
+
+
+
+old_configs = {
+
+
+    'cartpole': {
+        'end_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/CartpoleSwingup_eta0.01_L3_bigNarrTrue_skip4_prebias_valuefn_expandrange_may15/features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'temporal_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/CartpoleSwingup_eta0.01_L3_bigNarrTrue_skip2_prebias_valuefn_expandrange_may15/temporal_features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'env_name': 'CartpoleSwingup',
+        'obs_dim': 5,
+        'action_dim': 1,
+        'num_envs': 2048,
+        'unroll_length': 30,
+        'num_minibatches': 32,
+        'update_epochs': 16,
+        'num_timesteps': 1e8,
+        'minibatch_size': 1024,
+        'base_layer_size': 4,
+        'num_seeds': 5,
+        'layer_sizes':  [4, 16, 64, 256, 1024],
+        'timesteps': [         0,   50331648,  100663296,  150994944,  201326592,
+        251658240,  301989888,  352321536,  402653184,  452984832,
+        503316480,  553648128,  603979776,  654311424,  704643072,
+        754974720,  805306368,  855638016,  905969664,  956301312,
+       1006632960, 1056964608, 1107296256, 1157627904, 1207959552,
+       1258291200, 1308622848, 1358954496, 1409286144, 1459617792,
+       1509949440, 1560281088, 1610612736, 1660944384, 1711276032,
+       1761607680, 1811939328, 1862270976, 1912602624, 1962934272,
+       2013265920]
+    },
+
+    'panda': {
+        'end_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/PandaPickCube_eta0.01_L5_bigNarrTrue_skip8_prebias_valuefn_expandrange_may15/features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'temporal_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/PandaPickCube_eta0.01_L5_bigNarrTrue_skip4_prebias_valuefn_expandrange_may15/temporal_features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'env_name': 'PandaPickCube',
+        'obs_dim': 66,
+        'action_dim': 8,
+        'num_envs': 2048,
+        'unroll_length': 10,
+        'num_minibatches': 32,
+        'update_epochs': 16,
+        'num_timesteps': 1e8,
+        'minibatch_size': 1024,
+        'base_layer_size': 4,
+        'num_seeds': 5,
+        'layer_sizes':  [4, 16, 64, 256, 1024],
+        'timesteps': [        0,   5079040,  10158080,  15237120,  20316160,  25395200,
+        30474240,  35553280,  40632320,  45711360,  50790400,  55869440,
+        60948480,  66027520,  71106560,  76185600,  81264640,  86343680,
+        91422720,  96501760, 101580800, 106659840, 111738880, 116817920,
+       121896960, 126976000, 132055040, 137134080, 142213120, 147292160,
+       152371200, 157450240, 162529280, 167608320, 172687360, 177766400,
+       182845440, 187924480, 193003520, 198082560, 203161600]
+    },
+
+    'humanoid': {
+        'end_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/G1JoystickRoughTerrain_eta0.01_L5_bigNarrTrue_skip8_prebias_valuefn_expandrange_may15/features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'temporal_dir': "/n/netscratch/pehlevan_lab/Lab/adamlee/muprljax/yay_data/G1JoystickRoughTerrain_eta0.01_L5_bigNarrTrue_skip4_prebias_valuefn_expandrange_may15/temporal_features_hdensity_entropys_logits_scales_valuefn_actions.npz",
+        'env_name': 'G1JoystickRoughTerrain',
+        'obs_dim': 103,
+        'action_dim': 8,
+        'num_envs': 2048,
+        'unroll_length': 10,
+        'num_minibatches': 32,
+        'update_epochs': 16,
+        'num_timesteps': 1e8,
+        'minibatch_size': 1024,
+        'base_layer_size': 4,
+        'num_seeds': 1,
+        'layer_sizes':  [8, 32, 128, 512, 2048],
+        'timesteps': [        0,   5898240,  11796480,  17694720,  23592960,  29491200,
+        35389440,  41287680,  47185920,  53084160,  58982400,  64880640,
+        70778880,  76677120,  82575360,  88473600,  94371840, 100270080,
+       106168320, 112066560, 117964800]
+    },
+}
